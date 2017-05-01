@@ -1,6 +1,6 @@
 {
   "name": "lerna-test-reimar-button",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "lerna test button component",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "lerna-test-reimar-essentials": "^1.0.2",
-    "lerna-test-reimar-tooltip": "^1.0.2"
+    "lerna-test-reimar-essentials": "^1.0.3",
+    "lerna-test-reimar-tooltip": "^1.0.3"
   }
 }
