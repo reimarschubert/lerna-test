@@ -1,0 +1,9 @@
+{
+    "name": "lerna-test-reimar",
+    "version": "1.0.1",
+    "description": "lerna test",
+
+  "devDependencies": {
+    "lerna": "^2.0.0-rc.4"
+  }
+}

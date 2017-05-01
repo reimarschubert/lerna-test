@@ -1,0 +1,65 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], sort: true, concurrency: 4 }
+2 verbose rootPath /Users/reimarschubert/Development/lerna-test
+3 info version 2.0.0-rc.4
+4 info versioning independent
+5 silly isInitialized
+6 silly isInitialized true
+7 silly existsSync /Users/reimarschubert/Development/lerna-test/VERSION
+8 silly initialize attempt
+9 silly getUpdates
+10 info Checking for updated packages...
+11 silly hasTags
+12 verbose hasTags false
+13 warn No tags found!
+14 info Comparing with initial commit.
+15 verbose has update button
+16 verbose has update tooltip
+17 verbose has update essentials
+18 silly collectDependents
+19 silly isPackageDependentOf button button
+20 silly isPackageDependentOf button tooltip
+21 silly isPackageDependentOf button essentials
+22 silly isPackageDependentOf tooltip button
+23 silly isPackageDependentOf tooltip tooltip
+24 silly isPackageDependentOf tooltip essentials
+25 silly isPackageDependentOf essentials button
+26 silly isPackageDependentOf essentials tooltip
+27 silly isPackageDependentOf essentials essentials
+28 silly collectUpdates
+29 verbose has filtered update button
+30 verbose has filtered update tooltip
+31 verbose has filtered update essentials
+32 silly initialize success
+33 silly execute attempt
+34 silly isDetachedHead
+35 silly getCurrentBranch
+36 error execute Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+36 error execute Use '--' to separate paths from revisions, like this:
+36 error execute 'git <command> [<revision>...] -- [<file>...]'
+36 error execute
+36 error execute     at Function.module.exports.sync (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
+36 error execute     at Function.execSync (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:51:30)
+36 error execute     at Function.getCurrentBranch (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/GitUtilities.js:183:59)
+36 error execute     at Function.isDetachedHead (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/GitUtilities.js:37:37)
+36 error execute     at PublishCommand.execute (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:234:55)
+36 error execute     at PublishCommand._attempt (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/Command.js:265:21)
+36 error execute     at /Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/Command.js:252:15
+36 error execute     at /Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/Command.js:274:13
+36 error execute     at /Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:474:11
+36 error execute     at /Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/PromptUtilities.js:38:9
+36 error execute  callback with error
+36 error execute  Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+36 error execute Use '--' to separate paths from revisions, like this:
+36 error execute 'git <command> [<revision>...] -- [<file>...]'
+36 error execute
+36 error execute     at Function.module.exports.sync (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:277:26)
+36 error execute     at Function.execSync (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/ChildProcessUtilities.js:51:30)
+36 error execute     at Function.getCurrentBranch (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/GitUtilities.js:183:59)
+36 error execute     at Function.isDetachedHead (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/GitUtilities.js:37:37)
+36 error execute     at PublishCommand.execute (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:234:55)
+36 error execute     at PublishCommand._attempt (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/Command.js:265:21)
+36 error execute     at /Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/Command.js:252:15
+36 error execute     at /Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/Command.js:274:13
+36 error execute     at /Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/commands/PublishCommand.js:474:11
+36 error execute     at /Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/lib/PromptUtilities.js:38:9
