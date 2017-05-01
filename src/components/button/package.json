@@ -1,6 +1,6 @@
 {
   "name": "button",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "lerna test button component",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "@lerna-test/essentials": "^1.0.0",
     "@lerna-test/tooltip": "^1.0.0"
