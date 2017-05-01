@@ -1,5 +1,5 @@
 {
-  "name": "button",
+  "name": "@lerna-test-reimar/button",
   "version": "1.0.2",
   "description": "lerna test button component",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
-    "@lerna-test/essentials": "^1.0.0",
-    "@lerna-test/tooltip": "^1.0.0"
+    "@lerna-test-reimar/essentials": "^1.0.0",
+    "@lerna-test-reimar/tooltip": "^1.0.0"
   }
 }

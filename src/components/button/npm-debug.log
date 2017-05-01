@@ -1,186 +1,105 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node',
 1 verbose cli   '/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm',
-1 verbose cli   'install' ]
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   'latest' ]
 2 info using npm@3.8.6
 3 info using node@v6.0.0
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readLocalPackageData
-7 silly install normalizeTree
-8 silly loadCurrentTree Finishing
-9 silly loadIdealTree Starting
-10 silly install loadIdealTree
-11 silly cloneCurrentTree Starting
-12 silly install cloneCurrentTreeToIdealTree
-13 silly cloneCurrentTree Finishing
-14 silly loadShrinkwrap Starting
-15 silly install loadShrinkwrap
-16 silly loadShrinkwrap Finishing
-17 silly loadAllDepsIntoIdealTree Starting
-18 silly install loadAllDepsIntoIdealTree
-19 silly fetchNamedPackageData @lerna-test/essentials
-20 silly mapToRegistry name @lerna-test/essentials
-21 silly mapToRegistry scope (from package name) @lerna-test
-22 verbose mapToRegistry no registry URL found in name for scope @lerna-test
-23 silly mapToRegistry using default registry
-24 silly mapToRegistry registry https://registry.npmjs.org/
-25 silly mapToRegistry data Result {
-25 silly mapToRegistry   raw: '@lerna-test/essentials',
-25 silly mapToRegistry   scope: '@lerna-test',
-25 silly mapToRegistry   name: '@lerna-test/essentials',
-25 silly mapToRegistry   rawSpec: '',
-25 silly mapToRegistry   spec: 'latest',
-25 silly mapToRegistry   type: 'tag' }
-26 silly mapToRegistry uri https://registry.npmjs.org/@lerna-test%2fessentials
-27 silly fetchNamedPackageData @lerna-test/tooltip
-28 silly mapToRegistry name @lerna-test/tooltip
-29 silly mapToRegistry scope (from package name) @lerna-test
-30 verbose mapToRegistry no registry URL found in name for scope @lerna-test
-31 silly mapToRegistry using default registry
-32 silly mapToRegistry registry https://registry.npmjs.org/
-33 silly mapToRegistry data Result {
-33 silly mapToRegistry   raw: '@lerna-test/tooltip',
-33 silly mapToRegistry   scope: '@lerna-test',
-33 silly mapToRegistry   name: '@lerna-test/tooltip',
-33 silly mapToRegistry   rawSpec: '',
-33 silly mapToRegistry   spec: 'latest',
-33 silly mapToRegistry   type: 'tag' }
-34 silly mapToRegistry uri https://registry.npmjs.org/@lerna-test%2ftooltip
-35 verbose request uri https://registry.npmjs.org/@lerna-test%2fessentials
-36 verbose request no auth needed
-37 info attempt registry request try #1 at 12:10:16 PM
-38 verbose request using bearer token for auth
-39 verbose request id 80f916d087bc06fc
-40 http request GET https://registry.npmjs.org/@lerna-test%2fessentials
-41 verbose request uri https://registry.npmjs.org/@lerna-test%2ftooltip
-42 verbose request no auth needed
-43 info attempt registry request try #1 at 12:10:16 PM
-44 verbose request using bearer token for auth
-45 http request GET https://registry.npmjs.org/@lerna-test%2ftooltip
-46 http 404 https://registry.npmjs.org/@lerna-test%2fessentials
-47 verbose headers { 'content-type': 'application/json',
-47 verbose headers   'cache-control': 'max-age=0',
-47 verbose headers   'content-length': '21',
-47 verbose headers   'accept-ranges': 'bytes',
-47 verbose headers   date: 'Mon, 01 May 2017 16:10:16 GMT',
-47 verbose headers   via: '1.1 varnish',
-47 verbose headers   connection: 'keep-alive',
-47 verbose headers   'x-served-by': 'cache-yyz8321-YYZ',
-47 verbose headers   'x-cache': 'MISS',
-47 verbose headers   'x-cache-hits': '0',
-47 verbose headers   'x-timer': 'S1493655016.410882,VS0,VE345' }
-48 silly get cb [ 404,
-48 silly get   { 'content-type': 'application/json',
-48 silly get     'cache-control': 'max-age=0',
-48 silly get     'content-length': '21',
-48 silly get     'accept-ranges': 'bytes',
-48 silly get     date: 'Mon, 01 May 2017 16:10:16 GMT',
-48 silly get     via: '1.1 varnish',
-48 silly get     connection: 'keep-alive',
-48 silly get     'x-served-by': 'cache-yyz8321-YYZ',
-48 silly get     'x-cache': 'MISS',
-48 silly get     'x-cache-hits': '0',
-48 silly get     'x-timer': 'S1493655016.410882,VS0,VE345' } ]
-49 silly fetchPackageMetaData Error: Not found : @lerna-test/essentials
-49 silly fetchPackageMetaData     at makeError (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-49 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-49 silly fetchPackageMetaData     at Request._callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-49 silly fetchPackageMetaData     at Request.self.callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
-49 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-49 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-49 silly fetchPackageMetaData     at Request.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
-49 silly fetchPackageMetaData     at emitOne (events.js:101:20)
-49 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-49 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
-49 silly fetchPackageMetaData  error for @lerna-test/essentials@^1.0.0 { Error: Not found : @lerna-test/essentials
-49 silly fetchPackageMetaData     at makeError (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-49 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-49 silly fetchPackageMetaData     at Request._callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-49 silly fetchPackageMetaData     at Request.self.callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
-49 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-49 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-49 silly fetchPackageMetaData     at Request.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
-49 silly fetchPackageMetaData     at emitOne (events.js:101:20)
-49 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-49 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
-49 silly fetchPackageMetaData   pkgid: '@lerna-test/essentials',
-49 silly fetchPackageMetaData   statusCode: 404,
-49 silly fetchPackageMetaData   code: 'E404' }
-50 http 404 https://registry.npmjs.org/@lerna-test%2ftooltip
-51 verbose headers { 'content-type': 'application/json',
-51 verbose headers   'cache-control': 'max-age=0',
-51 verbose headers   'content-length': '21',
-51 verbose headers   'accept-ranges': 'bytes',
-51 verbose headers   date: 'Mon, 01 May 2017 16:10:16 GMT',
-51 verbose headers   via: '1.1 varnish',
-51 verbose headers   connection: 'keep-alive',
-51 verbose headers   'x-served-by': 'cache-yyz8329-YYZ',
-51 verbose headers   'x-cache': 'MISS',
-51 verbose headers   'x-cache-hits': '0',
-51 verbose headers   'x-timer': 'S1493655016.410643,VS0,VE347' }
-52 silly get cb [ 404,
-52 silly get   { 'content-type': 'application/json',
-52 silly get     'cache-control': 'max-age=0',
-52 silly get     'content-length': '21',
-52 silly get     'accept-ranges': 'bytes',
-52 silly get     date: 'Mon, 01 May 2017 16:10:16 GMT',
-52 silly get     via: '1.1 varnish',
-52 silly get     connection: 'keep-alive',
-52 silly get     'x-served-by': 'cache-yyz8329-YYZ',
-52 silly get     'x-cache': 'MISS',
-52 silly get     'x-cache-hits': '0',
-52 silly get     'x-timer': 'S1493655016.410643,VS0,VE347' } ]
-53 silly fetchPackageMetaData Error: Not found : @lerna-test/tooltip
-53 silly fetchPackageMetaData     at makeError (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-53 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-53 silly fetchPackageMetaData     at Request._callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-53 silly fetchPackageMetaData     at Request.self.callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
-53 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-53 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-53 silly fetchPackageMetaData     at Request.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
-53 silly fetchPackageMetaData     at emitOne (events.js:101:20)
-53 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-53 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
-53 silly fetchPackageMetaData  error for @lerna-test/tooltip@^1.0.0 { Error: Not found : @lerna-test/tooltip
-53 silly fetchPackageMetaData     at makeError (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-53 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-53 silly fetchPackageMetaData     at Request._callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-53 silly fetchPackageMetaData     at Request.self.callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
-53 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-53 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-53 silly fetchPackageMetaData     at Request.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
-53 silly fetchPackageMetaData     at emitOne (events.js:101:20)
-53 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-53 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:963:12) pkgid: '@lerna-test/tooltip', statusCode: 404, code: 'E404' }
-54 silly rollbackFailedOptional Starting
-55 silly rollbackFailedOptional Finishing
-56 silly runTopLevelLifecycles Starting
-57 silly runTopLevelLifecycles Finishing
-58 silly install printInstalled
-59 verbose stack Error: Not found : @lerna-test/essentials
-59 verbose stack     at makeError (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-59 verbose stack     at CachingRegistryClient.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
-59 verbose stack     at Request._callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-59 verbose stack     at Request.self.callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
-59 verbose stack     at emitTwo (events.js:106:13)
-59 verbose stack     at Request.emit (events.js:191:7)
-59 verbose stack     at Request.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
-59 verbose stack     at emitOne (events.js:101:20)
-59 verbose stack     at Request.emit (events.js:188:7)
-59 verbose stack     at IncomingMessage.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
-60 verbose statusCode 404
-61 verbose pkgid @lerna-test/essentials
-62 verbose cwd /Users/reimarschubert/Development/lerna-test/src/components/button
-63 error Darwin 15.6.0
-64 error argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "install"
-65 error node v6.0.0
-66 error npm  v3.8.6
-67 error code E404
-68 error 404 Not found : @lerna-test/essentials
-69 error 404
-70 error 404 '@lerna-test/essentials' is not in the npm registry.
-71 error 404 You should bug the author to publish it (or use the name yourself!)
-72 error 404 Note that you can also install from a
-73 error 404 tarball, folder, http url, or git url.
-74 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/reimarschubert/Development/lerna-test/src/components/button',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/reimarschubert/.npm/button/1.0.2/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/reimarschubert/.npm correctMkdir not in flight; initializing
+10 info lifecycle button@1.0.2~prepublish: button@1.0.2
+11 silly lifecycle button@1.0.2~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/reimarschubert/.npm/button/1.0.2/package.tgz',
+12 verbose tar pack   '/Users/reimarschubert/Development/lerna-test/src/components/button' ]
+13 verbose tarball /Users/reimarschubert/.npm/button/1.0.2/package.tgz
+14 verbose folder /Users/reimarschubert/Development/lerna-test/src/components/button
+15 verbose addLocalTarball adding from inside cache /Users/reimarschubert/.npm/button/1.0.2/package.tgz
+16 verbose correctMkdir /Users/reimarschubert/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd button@1.0.2
+18 verbose afterAdd /Users/reimarschubert/.npm/button/1.0.2/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/reimarschubert/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/reimarschubert/.npm/button/1.0.2/package/package.json written
+21 silly publish { name: 'button',
+21 silly publish   version: '1.0.2',
+21 silly publish   description: 'lerna test button component',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   devDependencies: {},
+21 silly publish   dependencies:
+21 silly publish    { '@lerna-test/essentials': '^1.0.0',
+21 silly publish      '@lerna-test/tooltip': '^1.0.0' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'button@1.0.2',
+21 silly publish   _shasum: '50b0d2d48fe7132acfb6d34237b13498789abaef',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name button
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'button',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'button',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/button
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/reimarschubert/.npm/button/1.0.2/package.tgz
+30 verbose request uri https://registry.npmjs.org/button
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:36:18 PM
+33 verbose request using bearer token for auth
+34 verbose request id d3088c772e5ae082
+35 http request PUT https://registry.npmjs.org/button
+36 http 403 https://registry.npmjs.org/button
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '100',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 01 May 2017 16:36:18 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-yyz8330-YYZ',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1493656578.351309,VS0,VE293',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/reimarschubert/.npm/registry.npmjs.org/button on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "button". Are you logged in as the correct user? : button
+40 verbose stack     at makeError (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/npm/node_modules/request/request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid button
+43 verbose cwd /Users/reimarschubert/Development/lerna-test/src/components/button
+44 error Darwin 15.6.0
+45 error argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+46 error node v6.0.0
+47 error npm  v3.8.6
+48 error code E403
+49 error you do not have permission to publish "button". Are you logged in as the correct user? : button
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
