@@ -10,360 +10,287 @@
 9 silly getUpdates
 10 info Checking for updated packages...
 11 silly hasTags
-12 verbose hasTags false
-13 warn No tags found!
-14 info Comparing with initial commit.
-15 verbose has update button
-16 verbose has update tooltip
-17 verbose has update essentials
-18 silly collectDependents
-19 silly isPackageDependentOf button button
-20 silly isPackageDependentOf button tooltip
-21 silly isPackageDependentOf button essentials
-22 silly isPackageDependentOf tooltip button
-23 silly isPackageDependentOf tooltip tooltip
-24 silly isPackageDependentOf tooltip essentials
-25 silly isPackageDependentOf essentials button
-26 silly isPackageDependentOf essentials tooltip
-27 silly isPackageDependentOf essentials essentials
-28 silly collectUpdates
-29 verbose has filtered update button
-30 verbose has filtered update tooltip
-31 verbose has filtered update essentials
-32 silly initialize success
-33 silly execute attempt
-34 silly isDetachedHead
-35 silly getCurrentBranch
-36 verbose getCurrentBranch master
-37 verbose isDetachedHead false
-38 silly addFile /Users/reimarschubert/Development/lerna-test/src/components/button/package.json
-39 silly addFile /Users/reimarschubert/Development/lerna-test/src/components/tooltip/package.json
-40 silly addFile /Users/reimarschubert/Development/lerna-test/src/essentials/package.json
-41 silly commit Publish
-41 silly commit
-41 silly commit  - button@1.0.2
-41 silly commit  - tooltip@1.0.1
-41 silly commit  - essentials@1.0.1
-42 verbose commit [ 'commit',
-42 verbose commit   '-F',
-42 verbose commit   '/private/var/folders/6q/vm4p37yx7d3cw22kdcfvbbjw0000gn/T/1bd1892c-918d-4dfe-940b-48af22684dd1/lerna-commit.txt' ]
-43 silly addTag button@1.0.2
-44 silly addTag tooltip@1.0.1
-45 silly addTag essentials@1.0.1
-46 info publish Publishing packages to npm...
-47 silly existsSync /Users/reimarschubert/Development/lerna-test/src/components/button/scripts/prepublish.js
-48 verbose execScript No prepublish script found at /Users/reimarschubert/Development/lerna-test/src/components/button/scripts/prepublish.js
-49 silly existsSync /Users/reimarschubert/Development/lerna-test/src/components/tooltip/scripts/prepublish.js
-50 verbose execScript No prepublish script found at /Users/reimarschubert/Development/lerna-test/src/components/tooltip/scripts/prepublish.js
-51 silly existsSync /Users/reimarschubert/Development/lerna-test/src/essentials/scripts/prepublish.js
-52 verbose execScript No prepublish script found at /Users/reimarschubert/Development/lerna-test/src/essentials/scripts/prepublish.js
-53 verbose publishing button
-54 silly publishTaggedInDir latest button
-55 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/button' }
-56 verbose publishing tooltip
-57 silly publishTaggedInDir latest tooltip
-58 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
-59 verbose publishing essentials
-60 silly publishTaggedInDir latest essentials
-61 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
-62 error publish Retrying failed publish: button
-63 verbose publish error Error: Command failed: npm publish --tag latest
-63 verbose publish error npm ERR! publish Failed PUT 403
-63 verbose publish error npm ERR! Darwin 15.6.0
-63 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-63 verbose publish error npm ERR! node v6.0.0
-63 verbose publish error npm ERR! npm  v3.8.6
-63 verbose publish error npm ERR! code E403
-63 verbose publish error
-63 verbose publish error npm ERR! you do not have permission to publish "button". Are you logged in as the correct user? : button
-63 verbose publish error npm ERR!
-63 verbose publish error npm ERR! If you need help, you may report this error at:
-63 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-63 verbose publish error
-63 verbose publish error npm ERR! Please include the following file with any support request:
-63 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/button/npm-debug.log
-63 verbose publish error
-63 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-63 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-64 verbose publishing button
-65 silly publishTaggedInDir latest button
-66 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/button' }
-67 error publish Retrying failed publish: tooltip
-68 verbose publish error Error: Command failed: npm publish --tag latest
-68 verbose publish error npm ERR! publish Failed PUT 403
-68 verbose publish error npm ERR! Darwin 15.6.0
-68 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-68 verbose publish error npm ERR! node v6.0.0
-68 verbose publish error npm ERR! npm  v3.8.6
-68 verbose publish error npm ERR! code E403
-68 verbose publish error
-68 verbose publish error npm ERR! you do not have permission to publish "tooltip". Are you logged in as the correct user? : tooltip
-68 verbose publish error npm ERR!
-68 verbose publish error npm ERR! If you need help, you may report this error at:
-68 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-68 verbose publish error
-68 verbose publish error npm ERR! Please include the following file with any support request:
-68 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/tooltip/npm-debug.log
-68 verbose publish error
-68 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-68 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-69 verbose publishing tooltip
-70 silly publishTaggedInDir latest tooltip
-71 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
-72 error publish Retrying failed publish: essentials
-73 verbose publish error Error: Command failed: npm publish --tag latest
-73 verbose publish error npm ERR! publish Failed PUT 403
-73 verbose publish error npm ERR! Darwin 15.6.0
-73 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-73 verbose publish error npm ERR! node v6.0.0
-73 verbose publish error npm ERR! npm  v3.8.6
-73 verbose publish error npm ERR! code E403
-73 verbose publish error
-73 verbose publish error npm ERR! you do not have permission to publish "essentials". Are you logged in as the correct user? : essentials
-73 verbose publish error npm ERR!
-73 verbose publish error npm ERR! If you need help, you may report this error at:
-73 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-73 verbose publish error
-73 verbose publish error npm ERR! Please include the following file with any support request:
-73 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
-73 verbose publish error
-73 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-73 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-74 verbose publishing essentials
-75 silly publishTaggedInDir latest essentials
-76 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
-77 error publish Retrying failed publish: button
-78 verbose publish error Error: Command failed: npm publish --tag latest
-78 verbose publish error npm ERR! publish Failed PUT 403
-78 verbose publish error npm ERR! Darwin 15.6.0
-78 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-78 verbose publish error npm ERR! node v6.0.0
-78 verbose publish error npm ERR! npm  v3.8.6
-78 verbose publish error npm ERR! code E403
-78 verbose publish error
-78 verbose publish error npm ERR! you do not have permission to publish "button". Are you logged in as the correct user? : button
-78 verbose publish error npm ERR!
-78 verbose publish error npm ERR! If you need help, you may report this error at:
-78 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-78 verbose publish error
-78 verbose publish error npm ERR! Please include the following file with any support request:
-78 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/button/npm-debug.log
-78 verbose publish error
-78 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-78 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-79 verbose publishing button
-80 silly publishTaggedInDir latest button
-81 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/button' }
-82 error publish Retrying failed publish: tooltip
-83 verbose publish error Error: Command failed: npm publish --tag latest
-83 verbose publish error npm ERR! publish Failed PUT 403
-83 verbose publish error npm ERR! Darwin 15.6.0
-83 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-83 verbose publish error npm ERR! node v6.0.0
-83 verbose publish error npm ERR! npm  v3.8.6
-83 verbose publish error npm ERR! code E403
-83 verbose publish error
-83 verbose publish error npm ERR! you do not have permission to publish "tooltip". Are you logged in as the correct user? : tooltip
-83 verbose publish error npm ERR!
-83 verbose publish error npm ERR! If you need help, you may report this error at:
-83 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-83 verbose publish error
-83 verbose publish error npm ERR! Please include the following file with any support request:
-83 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/tooltip/npm-debug.log
-83 verbose publish error
-83 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-83 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-84 verbose publishing tooltip
-85 silly publishTaggedInDir latest tooltip
-86 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
-87 error publish Retrying failed publish: essentials
-88 verbose publish error Error: Command failed: npm publish --tag latest
-88 verbose publish error npm ERR! publish Failed PUT 403
-88 verbose publish error npm ERR! Darwin 15.6.0
-88 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-88 verbose publish error npm ERR! node v6.0.0
-88 verbose publish error npm ERR! npm  v3.8.6
-88 verbose publish error npm ERR! code E403
-88 verbose publish error
-88 verbose publish error npm ERR! you do not have permission to publish "essentials". Are you logged in as the correct user? : essentials
-88 verbose publish error npm ERR!
-88 verbose publish error npm ERR! If you need help, you may report this error at:
-88 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-88 verbose publish error
-88 verbose publish error npm ERR! Please include the following file with any support request:
-88 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
-88 verbose publish error
-88 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-88 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-89 verbose publishing essentials
-90 silly publishTaggedInDir latest essentials
-91 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
-92 error publish Retrying failed publish: button
-93 verbose publish error Error: Command failed: npm publish --tag latest
-93 verbose publish error npm ERR! publish Failed PUT 403
-93 verbose publish error npm ERR! Darwin 15.6.0
-93 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-93 verbose publish error npm ERR! node v6.0.0
-93 verbose publish error npm ERR! npm  v3.8.6
-93 verbose publish error npm ERR! code E403
-93 verbose publish error
-93 verbose publish error npm ERR! you do not have permission to publish "button". Are you logged in as the correct user? : button
-93 verbose publish error npm ERR!
-93 verbose publish error npm ERR! If you need help, you may report this error at:
-93 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-93 verbose publish error
-93 verbose publish error npm ERR! Please include the following file with any support request:
-93 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/button/npm-debug.log
-93 verbose publish error
-93 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-93 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-94 verbose publishing button
-95 silly publishTaggedInDir latest button
-96 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/button' }
-97 error publish Retrying failed publish: essentials
-98 verbose publish error Error: Command failed: npm publish --tag latest
-98 verbose publish error npm ERR! publish Failed PUT 403
-98 verbose publish error npm ERR! Darwin 15.6.0
-98 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-98 verbose publish error npm ERR! node v6.0.0
-98 verbose publish error npm ERR! npm  v3.8.6
-98 verbose publish error npm ERR! code E403
-98 verbose publish error
-98 verbose publish error npm ERR! you do not have permission to publish "essentials". Are you logged in as the correct user? : essentials
-98 verbose publish error npm ERR!
-98 verbose publish error npm ERR! If you need help, you may report this error at:
-98 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-98 verbose publish error
-98 verbose publish error npm ERR! Please include the following file with any support request:
-98 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
-98 verbose publish error
-98 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-98 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-99 verbose publishing essentials
-100 silly publishTaggedInDir latest essentials
-101 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
-102 error publish Retrying failed publish: tooltip
-103 verbose publish error Error: Command failed: npm publish --tag latest
-103 verbose publish error npm ERR! publish Failed PUT 403
-103 verbose publish error npm ERR! Darwin 15.6.0
-103 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-103 verbose publish error npm ERR! node v6.0.0
-103 verbose publish error npm ERR! npm  v3.8.6
-103 verbose publish error npm ERR! code E403
-103 verbose publish error
-103 verbose publish error npm ERR! you do not have permission to publish "tooltip". Are you logged in as the correct user? : tooltip
-103 verbose publish error npm ERR!
-103 verbose publish error npm ERR! If you need help, you may report this error at:
-103 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-103 verbose publish error
-103 verbose publish error npm ERR! Please include the following file with any support request:
-103 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/tooltip/npm-debug.log
-103 verbose publish error
-103 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-103 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-104 verbose publishing tooltip
-105 silly publishTaggedInDir latest tooltip
-106 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
-107 error publish Retrying failed publish: tooltip
-108 verbose publish error Error: Command failed: npm publish --tag latest
-108 verbose publish error npm ERR! publish Failed PUT 403
-108 verbose publish error npm ERR! Darwin 15.6.0
-108 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-108 verbose publish error npm ERR! node v6.0.0
-108 verbose publish error npm ERR! npm  v3.8.6
-108 verbose publish error npm ERR! code E403
-108 verbose publish error
-108 verbose publish error npm ERR! you do not have permission to publish "tooltip". Are you logged in as the correct user? : tooltip
-108 verbose publish error npm ERR!
-108 verbose publish error npm ERR! If you need help, you may report this error at:
-108 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-108 verbose publish error
-108 verbose publish error npm ERR! Please include the following file with any support request:
-108 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/tooltip/npm-debug.log
-108 verbose publish error
-108 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-108 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-109 verbose publishing tooltip
-110 silly publishTaggedInDir latest tooltip
-111 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
-112 error publish Retrying failed publish: essentials
-113 verbose publish error Error: Command failed: npm publish --tag latest
-113 verbose publish error npm ERR! publish Failed PUT 403
-113 verbose publish error npm ERR! Darwin 15.6.0
-113 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-113 verbose publish error npm ERR! node v6.0.0
-113 verbose publish error npm ERR! npm  v3.8.6
-113 verbose publish error npm ERR! code E403
-113 verbose publish error
-113 verbose publish error npm ERR! you do not have permission to publish "essentials". Are you logged in as the correct user? : essentials
-113 verbose publish error npm ERR!
-113 verbose publish error npm ERR! If you need help, you may report this error at:
-113 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-113 verbose publish error
-113 verbose publish error npm ERR! Please include the following file with any support request:
-113 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
-113 verbose publish error
-113 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-113 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-114 verbose publishing essentials
-115 silly publishTaggedInDir latest essentials
-116 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
-117 error publish Retrying failed publish: button
-118 verbose publish error Error: Command failed: npm publish --tag latest
-118 verbose publish error npm ERR! publish Failed PUT 403
-118 verbose publish error npm ERR! Darwin 15.6.0
-118 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-118 verbose publish error npm ERR! node v6.0.0
-118 verbose publish error npm ERR! npm  v3.8.6
-118 verbose publish error npm ERR! code E403
-118 verbose publish error
-118 verbose publish error npm ERR! you do not have permission to publish "button". Are you logged in as the correct user? : button
-118 verbose publish error npm ERR!
-118 verbose publish error npm ERR! If you need help, you may report this error at:
-118 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
-118 verbose publish error
-118 verbose publish error npm ERR! Please include the following file with any support request:
-118 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/button/npm-debug.log
-118 verbose publish error
-118 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-118 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
-119 verbose publishing button
-120 silly publishTaggedInDir latest button
-121 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/button' }
-122 error publish Ran out of retries while publishing button Error: Command failed: npm publish --tag latest
-122 error publish npm ERR! publish Failed PUT 403
-122 error publish npm ERR! Darwin 15.6.0
-122 error publish npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-122 error publish npm ERR! node v6.0.0
-122 error publish npm ERR! npm  v3.8.6
-122 error publish npm ERR! code E403
-122 error publish
-122 error publish npm ERR! you do not have permission to publish "button". Are you logged in as the correct user? : button
-122 error publish npm ERR!
-122 error publish npm ERR! If you need help, you may report this error at:
-122 error publish npm ERR!     <https://github.com/npm/npm/issues>
-122 error publish
-122 error publish npm ERR! Please include the following file with any support request:
-122 error publish npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/button/npm-debug.log
-122 error publish
-122 error publish     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-122 error publish     at process._tickCallback (internal/process/next_tick.js:103:7)
-123 error execute callback with error
-123 error execute  Error: Command failed: npm publish --tag latest
-123 error execute npm ERR! publish Failed PUT 403
-123 error execute npm ERR! Darwin 15.6.0
-123 error execute npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
-123 error execute npm ERR! node v6.0.0
-123 error execute npm ERR! npm  v3.8.6
-123 error execute npm ERR! code E403
-123 error execute
-123 error execute npm ERR! you do not have permission to publish "button". Are you logged in as the correct user? : button
-123 error execute npm ERR!
-123 error execute npm ERR! If you need help, you may report this error at:
-123 error execute npm ERR!     <https://github.com/npm/npm/issues>
-123 error execute
-123 error execute npm ERR! Please include the following file with any support request:
-123 error execute npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/button/npm-debug.log
-123 error execute
-123 error execute     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
-123 error execute     at process._tickCallback (internal/process/next_tick.js:103:7)
+12 verbose hasTags true
+13 silly getLastTag
+14 verbose getLastTag button@1.0.2
+15 info Comparing with tag button@1.0.2
+16 silly getLastTaggedCommitInBranch
+17 silly getLastTag
+18 verbose getLastTag button@1.0.2
+19 verbose getLastTaggedCommitInBranch 3b8feb03997917e38fdd613fef745b972457ae3f
+20 silly describeTag 3b8feb03997917e38fdd613fef745b972457ae3f
+21 silly describeTag button@1.0.2
+22 silly diffSinceIn button@1.0.2 /Users/reimarschubert/Development/lerna-test/src/components/button
+23 silly diff src/components/button/npm-debug.log
+23 silly diff src/components/button/package.json
+24 silly diffSinceIn button@1.0.2 /Users/reimarschubert/Development/lerna-test/src/components/tooltip
+25 silly diff src/components/tooltip/package.json
+26 silly diffSinceIn button@1.0.2 /Users/reimarschubert/Development/lerna-test/src/essentials
+27 silly diff src/essentials/package.json
+28 verbose has update @lerna-test-reimar/button
+29 verbose has update @lerna-test-reimar/tooltip
+30 verbose has update @lerna-test-reimar/essentials
+31 silly collectDependents
+32 silly isPackageDependentOf @lerna-test-reimar/button @lerna-test-reimar/button
+33 silly isPackageDependentOf @lerna-test-reimar/essentials @lerna-test-reimar/button
+34 silly isPackageDependentOf @lerna-test-reimar/tooltip @lerna-test-reimar/button
+35 silly isPackageDependentOf @lerna-test-reimar/button @lerna-test-reimar/tooltip
+36 verbose dependent @lerna-test-reimar/button depends on @lerna-test-reimar/tooltip
+37 silly isPackageDependentOf @lerna-test-reimar/button @lerna-test-reimar/essentials
+38 verbose dependent @lerna-test-reimar/button depends on @lerna-test-reimar/essentials
+39 silly isPackageDependentOf @lerna-test-reimar/tooltip @lerna-test-reimar/button
+40 silly isPackageDependentOf @lerna-test-reimar/tooltip @lerna-test-reimar/tooltip
+41 silly isPackageDependentOf @lerna-test-reimar/tooltip @lerna-test-reimar/essentials
+42 silly isPackageDependentOf @lerna-test-reimar/essentials @lerna-test-reimar/button
+43 silly isPackageDependentOf @lerna-test-reimar/essentials @lerna-test-reimar/tooltip
+44 silly isPackageDependentOf @lerna-test-reimar/essentials @lerna-test-reimar/essentials
+45 silly collectUpdates
+46 verbose has filtered update @lerna-test-reimar/button
+47 verbose has filtered update @lerna-test-reimar/tooltip
+48 verbose has filtered update @lerna-test-reimar/essentials
+49 silly initialize success
+50 silly execute attempt
+51 silly isDetachedHead
+52 silly getCurrentBranch
+53 verbose getCurrentBranch master
+54 verbose isDetachedHead false
+55 silly addFile /Users/reimarschubert/Development/lerna-test/src/components/button/package.json
+56 silly addFile /Users/reimarschubert/Development/lerna-test/src/components/tooltip/package.json
+57 silly addFile /Users/reimarschubert/Development/lerna-test/src/essentials/package.json
+58 silly commit Publish
+58 silly commit
+58 silly commit  - @lerna-test-reimar/button@1.0.3
+58 silly commit  - @lerna-test-reimar/tooltip@1.0.2
+58 silly commit  - @lerna-test-reimar/essentials@1.0.2
+59 verbose commit [ 'commit',
+59 verbose commit   '-F',
+59 verbose commit   '/private/var/folders/6q/vm4p37yx7d3cw22kdcfvbbjw0000gn/T/80e4bf84-ef2c-43ba-90ea-9e0adaa50ac8/lerna-commit.txt' ]
+60 silly addTag @lerna-test-reimar/button@1.0.3
+61 silly addTag @lerna-test-reimar/tooltip@1.0.2
+62 silly addTag @lerna-test-reimar/essentials@1.0.2
+63 info publish Publishing packages to npm...
+64 silly existsSync /Users/reimarschubert/Development/lerna-test/src/components/button/scripts/prepublish.js
+65 verbose execScript No prepublish script found at /Users/reimarschubert/Development/lerna-test/src/components/button/scripts/prepublish.js
+66 silly existsSync /Users/reimarschubert/Development/lerna-test/src/components/tooltip/scripts/prepublish.js
+67 verbose execScript No prepublish script found at /Users/reimarschubert/Development/lerna-test/src/components/tooltip/scripts/prepublish.js
+68 silly existsSync /Users/reimarschubert/Development/lerna-test/src/essentials/scripts/prepublish.js
+69 verbose execScript No prepublish script found at /Users/reimarschubert/Development/lerna-test/src/essentials/scripts/prepublish.js
+70 verbose publishing @lerna-test-reimar/tooltip
+71 silly publishTaggedInDir latest tooltip
+72 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
+73 verbose publishing @lerna-test-reimar/essentials
+74 silly publishTaggedInDir latest essentials
+75 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
+76 error publish Retrying failed publish: @lerna-test-reimar/tooltip
+77 verbose publish error Error: Command failed: npm publish --tag latest
+77 verbose publish error npm ERR! publish Failed PUT 402
+77 verbose publish error npm ERR! Darwin 15.6.0
+77 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+77 verbose publish error npm ERR! node v6.0.0
+77 verbose publish error npm ERR! npm  v3.8.6
+77 verbose publish error npm ERR! code E402
+77 verbose publish error
+77 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/tooltip
+77 verbose publish error npm ERR!
+77 verbose publish error npm ERR! If you need help, you may report this error at:
+77 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
+77 verbose publish error
+77 verbose publish error npm ERR! Please include the following file with any support request:
+77 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/tooltip/npm-debug.log
+77 verbose publish error
+77 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+77 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
+78 verbose publishing @lerna-test-reimar/tooltip
+79 silly publishTaggedInDir latest tooltip
+80 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
+81 error publish Retrying failed publish: @lerna-test-reimar/essentials
+82 verbose publish error Error: Command failed: npm publish --tag latest
+82 verbose publish error npm ERR! publish Failed PUT 402
+82 verbose publish error npm ERR! Darwin 15.6.0
+82 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+82 verbose publish error npm ERR! node v6.0.0
+82 verbose publish error npm ERR! npm  v3.8.6
+82 verbose publish error npm ERR! code E402
+82 verbose publish error
+82 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/essentials
+82 verbose publish error npm ERR!
+82 verbose publish error npm ERR! If you need help, you may report this error at:
+82 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
+82 verbose publish error
+82 verbose publish error npm ERR! Please include the following file with any support request:
+82 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
+82 verbose publish error
+82 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+82 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
+83 verbose publishing @lerna-test-reimar/essentials
+84 silly publishTaggedInDir latest essentials
+85 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
+86 error publish Retrying failed publish: @lerna-test-reimar/essentials
+87 verbose publish error Error: Command failed: npm publish --tag latest
+87 verbose publish error npm ERR! publish Failed PUT 402
+87 verbose publish error npm ERR! Darwin 15.6.0
+87 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+87 verbose publish error npm ERR! node v6.0.0
+87 verbose publish error npm ERR! npm  v3.8.6
+87 verbose publish error npm ERR! code E402
+87 verbose publish error
+87 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/essentials
+87 verbose publish error npm ERR!
+87 verbose publish error npm ERR! If you need help, you may report this error at:
+87 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
+87 verbose publish error
+87 verbose publish error npm ERR! Please include the following file with any support request:
+87 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
+87 verbose publish error
+87 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+87 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
+88 verbose publishing @lerna-test-reimar/essentials
+89 silly publishTaggedInDir latest essentials
+90 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
+91 error publish Retrying failed publish: @lerna-test-reimar/tooltip
+92 verbose publish error Error: Command failed: npm publish --tag latest
+92 verbose publish error npm ERR! publish Failed PUT 402
+92 verbose publish error npm ERR! Darwin 15.6.0
+92 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+92 verbose publish error npm ERR! node v6.0.0
+92 verbose publish error npm ERR! npm  v3.8.6
+92 verbose publish error npm ERR! code E402
+92 verbose publish error
+92 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/tooltip
+92 verbose publish error npm ERR!
+92 verbose publish error npm ERR! If you need help, you may report this error at:
+92 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
+92 verbose publish error
+92 verbose publish error npm ERR! Please include the following file with any support request:
+92 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/tooltip/npm-debug.log
+92 verbose publish error
+92 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+92 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
+93 verbose publishing @lerna-test-reimar/tooltip
+94 silly publishTaggedInDir latest tooltip
+95 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
+96 error publish Retrying failed publish: @lerna-test-reimar/essentials
+97 verbose publish error Error: Command failed: npm publish --tag latest
+97 verbose publish error npm ERR! publish Failed PUT 402
+97 verbose publish error npm ERR! Darwin 15.6.0
+97 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+97 verbose publish error npm ERR! node v6.0.0
+97 verbose publish error npm ERR! npm  v3.8.6
+97 verbose publish error npm ERR! code E402
+97 verbose publish error
+97 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/essentials
+97 verbose publish error npm ERR!
+97 verbose publish error npm ERR! If you need help, you may report this error at:
+97 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
+97 verbose publish error
+97 verbose publish error npm ERR! Please include the following file with any support request:
+97 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
+97 verbose publish error
+97 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+97 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
+98 verbose publishing @lerna-test-reimar/essentials
+99 silly publishTaggedInDir latest essentials
+100 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
+101 error publish Retrying failed publish: @lerna-test-reimar/tooltip
+102 verbose publish error Error: Command failed: npm publish --tag latest
+102 verbose publish error npm ERR! publish Failed PUT 402
+102 verbose publish error npm ERR! Darwin 15.6.0
+102 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+102 verbose publish error npm ERR! node v6.0.0
+102 verbose publish error npm ERR! npm  v3.8.6
+102 verbose publish error npm ERR! code E402
+102 verbose publish error
+102 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/tooltip
+102 verbose publish error npm ERR!
+102 verbose publish error npm ERR! If you need help, you may report this error at:
+102 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
+102 verbose publish error
+102 verbose publish error npm ERR! Please include the following file with any support request:
+102 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/tooltip/npm-debug.log
+102 verbose publish error
+102 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+102 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
+103 verbose publishing @lerna-test-reimar/tooltip
+104 silly publishTaggedInDir latest tooltip
+105 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
+106 error publish Retrying failed publish: @lerna-test-reimar/essentials
+107 verbose publish error Error: Command failed: npm publish --tag latest
+107 verbose publish error npm ERR! publish Failed PUT 402
+107 verbose publish error npm ERR! Darwin 15.6.0
+107 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+107 verbose publish error npm ERR! node v6.0.0
+107 verbose publish error npm ERR! npm  v3.8.6
+107 verbose publish error npm ERR! code E402
+107 verbose publish error
+107 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/essentials
+107 verbose publish error npm ERR!
+107 verbose publish error npm ERR! If you need help, you may report this error at:
+107 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
+107 verbose publish error
+107 verbose publish error npm ERR! Please include the following file with any support request:
+107 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
+107 verbose publish error
+107 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+107 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
+108 verbose publishing @lerna-test-reimar/essentials
+109 silly publishTaggedInDir latest essentials
+110 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/essentials' }
+111 error publish Retrying failed publish: @lerna-test-reimar/tooltip
+112 verbose publish error Error: Command failed: npm publish --tag latest
+112 verbose publish error npm ERR! publish Failed PUT 402
+112 verbose publish error npm ERR! Darwin 15.6.0
+112 verbose publish error npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+112 verbose publish error npm ERR! node v6.0.0
+112 verbose publish error npm ERR! npm  v3.8.6
+112 verbose publish error npm ERR! code E402
+112 verbose publish error
+112 verbose publish error npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/tooltip
+112 verbose publish error npm ERR!
+112 verbose publish error npm ERR! If you need help, you may report this error at:
+112 verbose publish error npm ERR!     <https://github.com/npm/npm/issues>
+112 verbose publish error
+112 verbose publish error npm ERR! Please include the following file with any support request:
+112 verbose publish error npm ERR!     /Users/reimarschubert/Development/lerna-test/src/components/tooltip/npm-debug.log
+112 verbose publish error
+112 verbose publish error     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+112 verbose publish error     at process._tickCallback (internal/process/next_tick.js:103:7)
+113 verbose publishing @lerna-test-reimar/tooltip
+114 silly publishTaggedInDir latest tooltip
+115 silly getExecOpts { cwd: '/Users/reimarschubert/Development/lerna-test/src/components/tooltip' }
+116 error publish Ran out of retries while publishing @lerna-test-reimar/essentials Error: Command failed: npm publish --tag latest
+116 error publish npm ERR! publish Failed PUT 402
+116 error publish npm ERR! Darwin 15.6.0
+116 error publish npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+116 error publish npm ERR! node v6.0.0
+116 error publish npm ERR! npm  v3.8.6
+116 error publish npm ERR! code E402
+116 error publish
+116 error publish npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/essentials
+116 error publish npm ERR!
+116 error publish npm ERR! If you need help, you may report this error at:
+116 error publish npm ERR!     <https://github.com/npm/npm/issues>
+116 error publish
+116 error publish npm ERR! Please include the following file with any support request:
+116 error publish npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
+116 error publish
+116 error publish     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+116 error publish     at process._tickCallback (internal/process/next_tick.js:103:7)
+117 error execute callback with error
+117 error execute  Error: Command failed: npm publish --tag latest
+117 error execute npm ERR! publish Failed PUT 402
+117 error execute npm ERR! Darwin 15.6.0
+117 error execute npm ERR! argv "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/node" "/Users/reimarschubert/.nvm/versions/node/v6.0.0/bin/npm" "publish" "--tag" "latest"
+117 error execute npm ERR! node v6.0.0
+117 error execute npm ERR! npm  v3.8.6
+117 error execute npm ERR! code E402
+117 error execute
+117 error execute npm ERR! You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @lerna-test-reimar/essentials
+117 error execute npm ERR!
+117 error execute npm ERR! If you need help, you may report this error at:
+117 error execute npm ERR!     <https://github.com/npm/npm/issues>
+117 error execute
+117 error execute npm ERR! Please include the following file with any support request:
+117 error execute npm ERR!     /Users/reimarschubert/Development/lerna-test/src/essentials/npm-debug.log
+117 error execute
+117 error execute     at Promise.all.then.arr (/Users/reimarschubert/.nvm/versions/node/v6.0.0/lib/node_modules/lerna/node_modules/execa/index.js:210:11)
+117 error execute     at process._tickCallback (internal/process/next_tick.js:103:7)
